@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+int main(){
+string table;
+cin >> table;
+ 
+char table_rank=table[0];
+char table_suit=table[1];
+ 
+for(int i=0;i<5;i++){
+string card;
+cin >> card;
+if(card[0]==table_rank || card[1]==table_suit){
+cout<<"YES"<<endl;
+return 0;
+}
+}
+cout<<"NO"<<endl;
+return 0;
+}
