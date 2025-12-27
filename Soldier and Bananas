@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int main() {
+long long k,n,w;
+cin >> k >> n >> w;
+ 
+long long total_cost=(k*(w*(w+1)/2));
+long long borrow=total_cost - n;
+ 
+long long ans=max(0LL,borrow);
+ 
+cout << ans <<endl;
+ 
+return 0;
+ 
+}
